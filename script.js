@@ -990,3 +990,6 @@ console.log(myArr.filter(a =>  a.id === 10 ));
 
 console.log(myArr.filter(a =>  a.discontinued === false ).length);
 
+console.log((myArr.reduce((accumulator, current) => (accumulator.unitPrice > current.unitPrice ? accumulator : current))).name)
+
+console.log((myArr.reduce((accumulator, current) => (accumulator.unitPrice < current.unitPrice ? accumulator : current))).name);
